@@ -7,13 +7,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "High End Free",
   description: "Earn full Amazon refunds for verified 5-star reviews.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://highendfree.netlify.app"),
   icons: {
-    icon: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     title: "High End Free — Amazon Refunds for Reviews",
-    description: "Earn full Amazon refunds for verified 5-star reviews with a simple 8-step process.",
+    description:
+      "Earn full Amazon refunds for verified 5-star reviews with a simple 8-step process.",
     images: ["/logo.svg"],
   },
   twitter: {
@@ -30,6 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <meta name="theme-color" content="#F59E0B" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
