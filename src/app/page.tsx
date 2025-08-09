@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
 import Features from "@/components/Features";
-import Impact from "@/components/Impact";
 import LogoCloud from "@/components/LogoCloud";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -19,7 +18,6 @@ export default function Home() {
       <LogoCloud />
       <Services />
       <Features />
-      <Impact />
       <HowItWorks />
       <FAQ />
       <CTA />
