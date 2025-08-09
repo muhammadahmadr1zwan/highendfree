@@ -1,4 +1,4 @@
-// File: C:\Users\Ahmad\Downloads\seamless-vid-creator-main\seamless-vid-creator-main\src\app\select-plan\page.tsx
+// File: C:\Users\elatr\Downloads\highendfreeweb\src\app\select-plan\page.tsx
 import * as entry from '../../../../src/app/select-plan/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
