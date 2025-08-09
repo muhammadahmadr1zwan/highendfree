@@ -70,4 +70,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .shadow-golden {
+    box-shadow: 0 10px 30px hsl(var(--golden) / 0.25), 0 4px 12px hsl(var(--golden) / 0.25);
+  }
 } 
